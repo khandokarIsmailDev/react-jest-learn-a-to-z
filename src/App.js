@@ -7,6 +7,7 @@ function App() {
     <div className="App">
       <p>Learn React</p>
       <h1>This is Heading Tag</h1>
+      <input type='text' placeholder='Enter User Name' name='username' id='userId' /><br/><br/>
       <img
         title='this is react oficial logo'
         src={Logo}

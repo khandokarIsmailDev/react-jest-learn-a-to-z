@@ -11,3 +11,16 @@ test('learn react namer kono text ase ni',()=>{
   expect(checkImgTitle).toBeInTheDocument()
   expect(checkMyName).toBeInTheDocument()
 })
+
+test('input test check korbo',()=>{
+  render(<App/>)
+
+  const checkInput = screen.getByRole("textbox")    //text box ase ki na, sodo tai check korbe
+  const checkInputPlaceHolder = screen.getByPlaceholderText("Enter User Name")    //placeholder er name check korbe sodo
+
+  expect(checkInput).toBeInTheDocument()
+  expect(checkInputPlaceHolder).toBeInTheDocument()
+  expect(checkInput).toHaveAttribute('name','username') // oi input box er name ki username? ta check korbe
+  expect(checkInput).toHaveAttribute('id','userId')  // id er value userId ki na , ta check korlam
+  expect(checkInput).toHaveAttribute('type','text')
+})
