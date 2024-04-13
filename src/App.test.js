@@ -24,3 +24,83 @@ test('input test check korbo',()=>{
   expect(checkInput).toHaveAttribute('id','userId')  // id er value userId ki na , ta check korlam
   expect(checkInput).toHaveAttribute('type','text')
 })
+
+
+
+describe('akadik test group akare likha jabe, jemon uporer 2 ta test ai describe er bitor korbo',()=>{
+ 
+  test('test case 1:learn react',()=>{
+    render(<App/>)
+
+    const checkLearnText = screen.getByText(/learn react/i)
+    const checkImageTitle = screen.getByTitle('this is react oficial logo')
+    const checkMyName = screen.getByText('I Am ISMAIL')
+    
+    expect(checkLearnText).toBeInTheDocument()
+    expect(checkImageTitle).toBeInTheDocument()
+    expect(checkMyName).toBeInTheDocument()
+  })
+  
+  test('test 2: input test check ',()=>{
+    render(<App/>)
+
+    const inputCheck = screen.getByRole('textbox')
+    const inputPlaceholder = screen.getByPlaceholderText(/enter user name/i)
+    
+
+    expect(inputCheck).toBeInTheDocument()
+    expect(inputPlaceholder).toBeInTheDocument()
+    expect(inputCheck).toHaveAttribute('name','username')
+    expect(inputCheck).toHaveAttribute('type','text')
+    expect(inputCheck).toHaveAttribute('id','userId')
+  })
+  
+})
+
+
+
+
+
+describe('akadik test group akare likha jabe, jemon uporer 2 ta test ai describe er bitor korbo',()=>{
+ 
+  test('test case 1:learn react',()=>{
+    render(<App/>)
+
+    const checkLearnText = screen.getByText(/learn react/i)
+    const checkImageTitle = screen.getByTitle('this is react oficial logo')
+    const checkMyName = screen.getByText('I Am ISMAIL')
+    
+    expect(checkLearnText).toBeInTheDocument()
+    expect(checkImageTitle).toBeInTheDocument()
+    expect(checkMyName).toBeInTheDocument()
+  })
+  
+  test('test 2: input test check ',()=>{
+    render(<App/>)
+
+    const inputCheck = screen.getByRole('textbox')
+    const inputPlaceholder = screen.getByPlaceholderText(/enter user name/i)
+    
+
+    expect(inputCheck).toBeInTheDocument()
+    expect(inputPlaceholder).toBeInTheDocument()
+    expect(inputCheck).toHaveAttribute('name','username')
+    expect(inputCheck).toHaveAttribute('type','text')
+    expect(inputCheck).toHaveAttribute('id','userId')
+  })
+
+  describe('this is inner describe groupd test',()=>{
+    test('nested describe aibabe kaj kore',()=>{
+      render(<App/>)
+  
+      const checkLearnText = screen.getByText(/learn react/i)
+      const checkImageTitle = screen.getByTitle('this is react oficial logo')
+      const checkMyName = screen.getByText('I Am ISMAIL')
+      
+      expect(checkLearnText).toBeInTheDocument()
+      expect(checkImageTitle).toBeInTheDocument()
+      expect(checkMyName).toBeInTheDocument()
+    })
+  })
+  
+})
