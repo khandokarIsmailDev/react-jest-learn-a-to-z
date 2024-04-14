@@ -45,9 +45,53 @@ Object {
         </div>
         <div>
           <h2>
-            user list
+            Class Component
           </h2>
         </div>
+        <div
+          class="App"
+        >
+          <h2>
+            functional component method test
+          </h2>
+          <button
+            data-testid="btn1"
+          >
+            Update
+          </button>
+          <br />
+          <button>
+            click to say hi
+          </button>
+          <h3 />
+          <br />
+          <br />
+        </div>
+        <div>
+          <h1>
+            Get By Role Use Case
+          </h1>
+          <input
+            disabled=""
+            type="text"
+            value="helloValid"
+          />
+          <button>
+            click me
+          </button>
+        </div>
+        <div>
+          <h1>
+            Multiple elements and Custom Role
+          </h1>
+          <button>
+            button 1
+          </button>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
       </div>
     </div>
   </body>,
@@ -92,9 +136,53 @@ Object {
       </div>
       <div>
         <h2>
-          user list
+          Class Component
         </h2>
       </div>
+      <div
+        class="App"
+      >
+        <h2>
+          functional component method test
+        </h2>
+        <button
+          data-testid="btn1"
+        >
+          Update
+        </button>
+        <br />
+        <button>
+          click to say hi
+        </button>
+        <h3 />
+        <br />
+        <br />
+      </div>
+      <div>
+        <h1>
+          Get By Role Use Case
+        </h1>
+        <input
+          disabled=""
+          type="text"
+          value="helloValid"
+        />
+        <button>
+          click me
+        </button>
+      </div>
+      <div>
+        <h1>
+          Multiple elements and Custom Role
+        </h1>
+        <button>
+          button 1
+        </button>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
   </div>,
   "debug": [Function],

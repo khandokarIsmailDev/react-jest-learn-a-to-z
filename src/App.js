@@ -5,6 +5,9 @@ import { useState } from 'react';
 import Button from './Button';
 import Users from './Users';
 import Func from './Func';
+import Role from './Role'
+import MultipleElements from './MultipleElements';
+import GetAll from './GetAll';
 
 function App() {
 
@@ -29,6 +32,14 @@ function App() {
 
       <Func/>
 
+      <Role/>
+
+      <MultipleElements/>
+
+      <GetAll/>
+
+
+    <br/><br/><br/><br/>
     </div>
   );
 }
