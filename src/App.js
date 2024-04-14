@@ -8,6 +8,8 @@ import Func from './Func';
 import Role from './Role'
 import MultipleElements from './MultipleElements';
 import GetAll from './GetAll';
+import GetLavel from './GetLavel';
+import GetByAlt from './GetByAlt';
 
 function App() {
 
@@ -37,6 +39,10 @@ function App() {
       <MultipleElements/>
 
       <GetAll/>
+
+      <GetLavel/>
+
+      <GetByAlt/>
 
 
     <br/><br/><br/><br/>
